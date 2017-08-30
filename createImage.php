@@ -17,13 +17,13 @@ putenv('GDFONTPATH=' . realpath('.'));
 //header('Content-type: image/jpeg');
 
 // Create Image From Existing File
-$jpg_image = imagecreatefromjpeg('sunset.jpg');
+$jpg_image = imagecreatefromjpeg('img/sunset.jpg');
 
 // Allocate A Color For The Text
 $white = imagecolorallocate($jpg_image, 255, 255, 255);
 
 // Set Path to Font File
-$font_path = 'OpenSans-Italic.ttf';
+$font_path = 'fonts/OpenSans-Italic.ttf';
 
 // Print Text On Image
 imagettftext($jpg_image, $fontsize, 0, 30, 50, $white, $font_path, $text);
